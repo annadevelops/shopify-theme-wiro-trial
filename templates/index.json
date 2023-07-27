@@ -41,7 +41,7 @@
         "desktop_content_position": "middle-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
-        "color_scheme": "inverse",
+        "color_scheme": "background-1",
         "image_behavior": "zoom-in",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
@@ -83,28 +83,40 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "Can't decide?",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Request a swatch box and you'll be one step closer to owning your very own slice of perfection. Go on, it's time to treat yourself.<\/p>"
+          }
+        },
+        "af3a0d62-5e61-43d6-b977-aba9fdb29007": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get your free samples",
+            "button_link": "shopify:\/\/collections\/chairs",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
         "heading",
-        "text"
+        "text",
+        "af3a0d62-5e61-43d6-b977-aba9fdb29007"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "inverse",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "collage": {

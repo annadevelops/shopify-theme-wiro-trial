@@ -140,8 +140,8 @@
           "background_gradient": "",
           "text": "#f9f8f4",
           "button": "#121212",
-          "button_label": "#ffffff",
-          "secondary_button_label": "#121212",
+          "button_label": "#f9f8f4",
+          "secondary_button_label": "#f9f8f4",
           "shadow": "#121212"
         }
       },
@@ -158,7 +158,7 @@
       },
       "inverse": {
         "settings": {
-          "background": "#ffffff",
+          "background": "#efede3",
           "background_gradient": "",
           "text": "#132030",
           "button": "#132030",
