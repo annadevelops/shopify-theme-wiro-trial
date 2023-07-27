@@ -1,6 +1,8 @@
 {
   "current": {
-    "logo_width": 90,
+    "logo": "shopify:\/\/shop_images\/Svelte_2.png",
+    "logo_width": 190,
+    "favicon": "shopify:\/\/shop_images\/1.png",
     "type_header_font": "bodoni_poster_n9",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -134,9 +136,9 @@
     "color_schemes": {
       "background-1": {
         "settings": {
-          "background": "#ffffff",
+          "background": "#132030",
           "background_gradient": "",
-          "text": "#121212",
+          "text": "#f9f8f4",
           "button": "#121212",
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",
