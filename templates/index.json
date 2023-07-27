@@ -48,130 +48,6 @@
         "show_text_below": false
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "New In",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "chairs",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-2",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": true,
-        "show_swatches": true,
-        "enable_quick_add": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Can't decide?",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Request a swatch box and you'll be one step closer to owning your very own slice of perfection. Go on, it's time to treat yourself.<\/p>"
-          }
-        },
-        "af3a0d62-5e61-43d6-b977-aba9fdb29007": {
-          "type": "button",
-          "settings": {
-            "button_label": "Get your free samples",
-            "button_link": "shopify:\/\/collections\/chairs",
-            "button_style_secondary": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "af3a0d62-5e61-43d6-b977-aba9fdb29007"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "inverse",
-        "full_width": true,
-        "padding_top": 100,
-        "padding_bottom": 100
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "card_styles": "product-card-wrapper",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
@@ -218,20 +94,148 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "background-1",
+        "color_scheme": "inverse",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New In",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "chairs",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-2",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "show_swatches": true,
+        "enable_quick_add": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 28,
+        "padding_bottom": 36
+      }
+    },
+    "a009735a-64f2-41f3-a2b6-2d286cbe1d35": {
+      "type": "multirow",
+      "blocks": {
+        "template--20227052634433__a009735a-64f2-41f3-a2b6-2d286cbe1d35-row-1": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jean-philippe-delberghe-T5BF4OyQLwU-unsplash.jpg",
+            "caption": "Ultimate Experience",
+            "heading": "Free Delivery",
+            "text": "<p>Enjoy the convenience of shopping from the comfort of your home and have your stylish modern chairs delivered right to your doorstep without any additional cost. <\/p>",
+            "button_label": "SHOP",
+            "button_link": "shopify:\/\/collections\/chairs"
+          }
+        },
+        "template--20227052634433__a009735a-64f2-41f3-a2b6-2d286cbe1d35-row-2": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/alona-gross-6k2t0cFjmo8-unsplash_1.jpg",
+            "caption": "Risk Free",
+            "heading": "100 Day Trial",
+            "text": "<p>Embrace the comfort and style they bring to your home risk-free. Return anytime within the first 100 days, no questions asked.<\/p>",
+            "button_label": "SHOP",
+            "button_link": "shopify:\/\/collections\/chairs"
+          }
+        },
+        "template--20227052634433__a009735a-64f2-41f3-a2b6-2d286cbe1d35-row-3": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/inside-weather-2EUdAWQ3Uko-unsplash.jpg",
+            "caption": "POPULAR",
+            "heading": "Shop Like a Celeb",
+            "text": "<p>Featured in the Pages of Vogue. A trusted favourite, as featured on Vogue. Join countless satisfied customers who rely on our brand for exceptional modern chairs.<\/p>",
+            "button_label": "SHOP",
+            "button_link": "shopify:\/\/collections\/chairs"
+          }
+        }
+      },
+      "block_order": [
+        "template--20227052634433__a009735a-64f2-41f3-a2b6-2d286cbe1d35-row-1",
+        "template--20227052634433__a009735a-64f2-41f3-a2b6-2d286cbe1d35-row-2",
+        "template--20227052634433__a009735a-64f2-41f3-a2b6-2d286cbe1d35-row-3"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "background-2",
+        "row_color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Can't decide?",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Request a swatch box and you'll be one step closer to owning your very own slice of perfection. Go on, it's time to treat yourself.<\/p>"
+          }
+        },
+        "af3a0d62-5e61-43d6-b977-aba9fdb29007": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get your free samples",
+            "button_link": "shopify:\/\/collections\/chairs",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "af3a0d62-5e61-43d6-b977-aba9fdb29007"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "inverse",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
     }
   },
   "order": [
     "image_banner",
+    "multicolumn",
     "featured_collection",
-    "rich_text",
-    "collage",
-    "video",
-    "multicolumn"
+    "a009735a-64f2-41f3-a2b6-2d286cbe1d35",
+    "rich_text"
   ]
 }
