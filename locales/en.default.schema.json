@@ -53,6 +53,9 @@
           "options__2": {
             "label": "Card"
           },
+          "options__3": {
+            "label": "Bold"
+          },
           "label": "Style"
         }
       }
@@ -313,6 +316,9 @@
         "paragraph": "Cart and checkout prices always show currency codes. Example: $1.00 USD.",
         "currency_code_enabled": {
           "label": "Show currency codes"
+        },
+        "trailing_zero_enabled": {
+          "label": "Show trailing zeros"
         }
       }
     },
@@ -790,6 +796,10 @@
         "show_rating": {
           "label": "Show product rating",
           "info": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#featured-collection-show-product-rating)"
+        },
+        "show_swatches": {
+          "label": "Show color swatches",
+          "info": "If a product has a color option, the swatch will appear on the product card. Edit the color swatch in the [theme settings](/editor?context=theme&category=variant%20pills)"
         },
         "enable_quick_buy": {
           "label": "Enable quick add button",

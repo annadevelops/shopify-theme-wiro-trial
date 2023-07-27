@@ -4,8 +4,8 @@
     "theme_name": "Dawn",
     "theme_version": "10.0.0",
     "theme_author": "Shopify",
-    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes",
+    "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
     "name": "t:settings_schema.logo.name",
@@ -400,6 +400,29 @@
         "unit": "px",
         "label": "t:settings_schema.global.settings.blur.label",
         "default": 0
+      },
+      {
+        "type": "header",
+        "content": "Color swatches"
+      },
+      {
+        "type": "paragraph",
+        "content": "Provide a list of color swatches to be used for the variant pills. The name for the color must match the color option for the product i.e. Deep Matte Indigo: #3B3E79 Separate each color with a new line."
+      },
+      {
+        "type": "text",
+        "id": "variant_pills_swatches_color_name",
+        "label": "Option name",
+        "default": "Color",
+        "placeholder": "Color",
+        "info": "The name of the option to use for the swatches. This must match the name of the option in the product. For example, if the option is called 'color', enter 'color' here."
+      },
+      {
+        "type": "textarea",
+        "id": "variant_pills_swatches_color",
+        "label": "Color swatches",
+        "default": "Black: #000000\nWhite: #ffffff\nRed: #8B0000\nBlue: #004281\nGreen: #005a00",
+        "placeholder": "Black: #000000\nWhite: #ffffff\nRed: #8B0000\nBlue: #004281\nGreen: #005a00"
       }
     ]
   },
@@ -500,6 +523,10 @@
           {
             "value": "card",
             "label": "t:settings_schema.cards.settings.style.options__2.label"
+          },
+          {
+            "value": "bold",
+            "label": "t:settings_schema.cards.settings.style.options__3.label"
           }
         ],
         "default": "standard",
@@ -1410,6 +1437,12 @@
         "id": "currency_code_enabled",
         "label": "t:settings_schema.currency_format.settings.currency_code_enabled.label",
         "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "trailing_zero_enabled",
+        "label": "t:settings_schema.currency_format.settings.trailing_zero_enabled.label",
+        "default": false
       }
     ]
   },

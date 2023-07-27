@@ -1,0 +1,28 @@
+{%- assign product_color_option = product.options_by_name[settings.variant_pills_swatches_color_name] -%}
+{%- assign option_position = 'option' | append: product_color_option.position -%}
+
+<div class="product__swatches">
+  {%- for value in product_color_option.values -%}
+    {%- assign first_variant_with_value = product.variants | where: option_position, value | first -%}
+    {%- assign variant_image = first_variant_with_value.image -%}
+
+    {%- capture image_srcset -%}
+    {%- if variant_image.width >= 165 -%}{{ variant_image | image_url: width: 165 }} 165w,{%- endif -%}
+    {%- if variant_image.width >= 360 -%}{{ variant_image | image_url: width: 360 }} 360w,{%- endif -%}
+    {%- if variant_image.width >= 533 -%}{{ variant_image | image_url: width: 533 }} 533w,{%- endif -%}
+    {%- if variant_image.width >= 720 -%}{{ variant_image | image_url: width: 720 }} 720w,{%- endif -%}
+    {%- if variant_image.width >= 940 -%}{{ variant_image | image_url: width: 940 }} 940w,{%- endif -%}
+    {%- if variant_image.width >= 1066 -%}{{ variant_image | image_url: width: 1066 }} 1066w,{%- endif -%}
+    {{ variant_image | image_url }} {{ variant_image.width }}w
+    {%- endcapture -%}
+
+    <div
+      class="product__swatch product__swatch--color"
+      data-swatch-value="{{ value }}"
+      data-swatch-variant-image="{{ image_srcset }}"
+      data-swatch-product="{{ product.id }}"
+    >
+      <span></span>
+    </div>
+  {%- endfor -%}
+</div>

@@ -1,0 +1,38 @@
+{%- assign color_swatches = settings.variant_pills_swatches_color | newline_to_br | split: '<br />' -%}
+
+.product__swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  z-index: 998;
+  padding-inline: 4px;
+}
+
+.product__swatch {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  z-index: 999;
+}
+
+.product__swatch:hover {
+  outline: 2px solid #ffffff;
+  cursor: pointer;
+}
+
+{% for swatch in color_swatches %}
+  {%- assign swatch_details = swatch | strip_newlines | split: ":" -%}
+  {%- assign swatch_name = swatch_details | first -%}
+  {%- assign swatch_value = swatch_details | last -%}
+
+    .product__swatch--color[data-swatch-value="{{- swatch_name -}}"] {
+        background-color: {{ swatch_value }};
+    }
+
+    .product__swatch.product__swatch--color[data-swatch-value="{{- swatch_name -}}"]:hover {
+        outline-color: {{ swatch_value }};
+    }
+
+{% endfor %}
+

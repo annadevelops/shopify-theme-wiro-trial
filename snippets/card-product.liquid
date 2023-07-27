@@ -34,10 +34,11 @@
       assign ratio = 1
     endif
   -%}
-  <div class="card-wrapper product-card-wrapper underline-links-hover">
+  <div class="card-wrapper product-card-wrapper {% unless settings.card_style == 'bold' %}underline-links-hover{% endunless %}">
     <div
       class="
         card card--{{ settings.card_style }}
+        {% if settings.card_style == 'bold' %}card--standard{% endif %}
         {% if card_product.featured_media %} card--media{% else %} card--text{% endif %}
         {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
         {% if image_shape and image_shape != 'default' %} card--shape{% endif %}
@@ -91,10 +92,13 @@
                   src="{{ card_product.media[1] | image_url: width: 533 }}"
                   sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt=""
-                  class="motion-reduce"
+                  class="motion-reduce {% if show_swatches %}product__swatch__variant-image{% endif %}"
                   loading="lazy"
                   width="{{ card_product.media[1].width }}"
                   height="{{ card_product.media[1].height }}"
+                  {% if show_swatches %}
+                    data-swatch-product="{{ card_product.id }}"
+                  {% endif %}
                 >
               {%- endif -%}
             </div>
@@ -153,6 +157,9 @@
             >
               {{ card_product.title | escape }}
             </a>
+            {%- if settings.card_style == 'bold' -%}
+              {% render 'price', product: card_product, price_class: '' %}
+            {%- endif -%}
           </h3>
           <div class="card-information">
             {%- if show_vendor -%}
@@ -198,7 +205,13 @@
               </p>
             {%- endif -%}
 
-            {% render 'price', product: card_product, price_class: '' %}
+            {% comment %} COLOR SWATCHES {% endcomment %}
+            {%- if show_swatches -%}
+              {% render 'product-color-swatches', product: card_product %}
+            {%- endif -%}
+            {%- unless settings.card_style == 'bold' -%}
+              {% render 'price', product: card_product, price_class: '' %}
+            {%- endunless -%}
             {%- if card_product.quantity_price_breaks_configured? -%}
               <div class="card__information-volume-pricing-note">
                 <span class="caption">{{ 'products.product.volume_pricing.note' | t }}</span>
@@ -341,6 +354,7 @@
       </div>
     </div>
   </div>
+
 {%- else -%}
   <div class="card-wrapper product-card-wrapper underline-links-hover">
     <div
