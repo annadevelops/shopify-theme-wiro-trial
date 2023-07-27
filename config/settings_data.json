@@ -136,10 +136,10 @@
     "color_schemes": {
       "background-1": {
         "settings": {
-          "background": "#132030",
+          "background": "#f9f8f4",
           "background_gradient": "",
-          "text": "#f9f8f4",
-          "button": "#121212",
+          "text": "#132030",
+          "button": "#132030",
           "button_label": "#f9f8f4",
           "secondary_button_label": "#f9f8f4",
           "shadow": "#121212"
@@ -169,13 +169,13 @@
       },
       "accent-1": {
         "settings": {
-          "background": "#121212",
+          "background": "#132030",
           "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#ffffff",
-          "button_label": "#121212",
-          "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
+          "text": "#f9f8f4",
+          "button": "#efede3",
+          "button_label": "#132030",
+          "secondary_button_label": "#f9f8f4",
+          "shadow": "#efede3"
         }
       },
       "accent-2": {
