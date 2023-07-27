@@ -475,7 +475,6 @@
 
 /* CUSTOM */
 .card--bold .card__content .card__heading {
-  font-weight: 600;
   font-size: 17px;
   display: flex;
   align-items: center;
