@@ -8,14 +8,14 @@
         "footer-0": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
+            "heading": "Menu",
+            "menu": "main-menu"
           }
         },
         "footer-1": {
           "type": "link_list",
           "settings": {
-            "heading": "Info",
+            "heading": "Information",
             "menu": "footer"
           }
         },
@@ -23,7 +23,7 @@
           "type": "text",
           "settings": {
             "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            "subtext": "<p>Cutting-edge modern chairs redefining comfort since 2021.<\/p>"
           }
         }
       },
