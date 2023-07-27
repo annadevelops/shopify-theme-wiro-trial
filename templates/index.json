@@ -136,7 +136,7 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": true,
-        "show_swatches": true,
+        "show_swatches": false,
         "enable_quick_add": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
