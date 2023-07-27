@@ -21,6 +21,7 @@
 {% endcomment %}
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
+{{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
 
 {%- if card_product and card_product != empty -%}
   {%- liquid
@@ -391,7 +392,7 @@
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
               <div class="caption-with-letter-spacing light">{{ 'products.product.vendor' | t }}</div>
             {%- endif -%}
-            {% render 'price' %}
+            {% render 'price', show_compare_at_price: true %}
           </div>
         </div>
       </div>
